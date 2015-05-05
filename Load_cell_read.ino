@@ -196,7 +196,7 @@ void loop()
   {
       readLoadCells();
       
-      //readMotionData();
+      readMotionData();
       
       captureFlag = 0;
   }
