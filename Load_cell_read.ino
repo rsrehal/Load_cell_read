@@ -17,7 +17,7 @@ int loadCellVal[4] = {0};
 
 unsigned long currentTime = 0;
 unsigned long prevTime = 0;
-int captureFlag = 0;
+volatile int captureFlag = 0;
 
 float accel[3] = {0};
 float gyro[3] = {0};
@@ -196,7 +196,7 @@ void loop()
   {
       readLoadCells();
       
-      readMotionData();
+      //readMotionData();
       
       captureFlag = 0;
   }
